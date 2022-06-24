@@ -1,11 +1,11 @@
 #!/bin/sh
 
 # for debugging, delete the file at the start of every run so it doesn't endlessly append
-rm -f $(hostname)__pcidss.txt
+rm -f $(hostname)__linux__pcidss.txt
 
 set -x #echo on
 
-exec > $(hostname)__pcidss.txt 2>&1 # Pipe STDOUT and STDERR to file
+exec > $(hostname)__linux__pcidss.txt 2>&1 # Pipe STDOUT and STDERR to file
 
 # Evidence metadata
 hostname

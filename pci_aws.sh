@@ -2,8 +2,8 @@
 # This runs from any POSIX shell that has AWS CLI installed and pointing at the correct org
 
 # for debugging, delete the file at the start of every run so it doesn't endlessly append
-rm -f $(hostname)__pcidss.txt
-exec > $(aws sts get-caller-identity --query ""Account"" --output text)__pcidss.txt 2>&1 # Pipe STDOUT and STDERR
+rm -f $(hostname)__aws__pcidss.txt
+exec > $(aws sts get-caller-identity --query ""Account"" --output text)__aws__pcidss.txt 2>&1 # Pipe STDOUT and STDERR
 set -x #echo on
 
 
