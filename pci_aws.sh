@@ -9,7 +9,7 @@ set -x #echo on
 
 # Evidence metadata
 date
-aws sts get-caller-identity --query "Account" --output text
+aws sts get-caller-identity --output yaml
 
 
 #######################################################################################################################
