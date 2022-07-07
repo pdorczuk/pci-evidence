@@ -9,11 +9,11 @@ set -x #echo on
 
 # Evidence metadata
 date
+aws sts get-caller-identity --query "Account" --output text
 
 
 #######################################################################################################################
-# IAM password policy showing password rotation, minimum length, complexity, and history.
-# AND authentication and authorization parameters. 
+# IAM groups, roles, and policies including their relationships to each other AND authentication and authorization parameters. 
 # Supports PCI DSS Requirements 3.3.b, 7.1.1, 7.1.4, 7.2.1 - 7.2.3, 8.1, 8.1.2, 8.5.a
 #######################################################################################################################
 aws iam get-account-authorization-details --output yaml
