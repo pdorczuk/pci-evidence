@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # for debugging, delete the file at the start of every run so it doesn't endlessly append
-rm -f $(hostname)__linux__pcidss.txt
+rm -f linux__$(hostname).txt
 
 set -x #echo on
 
