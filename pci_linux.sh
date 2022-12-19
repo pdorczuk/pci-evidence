@@ -5,7 +5,7 @@ rm -f linux__$(hostname).txt
 
 set -x #echo on
 
-exec > $(hostname)__linux__pcidss.txt 2>&1 # Pipe STDOUT and STDERR to file
+exec > linux__$(hostname).txt 2>&1 # Pipe STDOUT and STDERR to file
 
 # Evidence metadata
 hostname
